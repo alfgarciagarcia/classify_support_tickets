@@ -4,38 +4,28 @@ Classify support tickets depending of text in the ticket, the model classifies t
 ### Assumptions
 These are the categories to classify the tickets in 2 levels: Level 1 with 7 categories and each of them with subcategories
 
-|1 Account Management | 2 Application Error |
-|---------------------|---------------------|
-|  - Access Request   |   - App Error |
-|  - Account Update   |   - App Functionality |
-|  - Login Issue      |   - App Down |
+|1 Account Management | 2 Application Error  | 3 Service Request |
+|---------------------|----------------------|-------------------|
+|  - Access Request   |   - App Error        |   - Request       |
+|  - Account Update   |   - App Functionality|  - Enhancement    |
+|  - Login Issue      |   - App Down         |   - Configuration |
   
 
-3 Service Request
-  - Request
-  - Enhancement
-  - Configuration
+|4 Integrations    | 5 Alert Monitoring  | 6 Data Error      |
+|------------------|---------------------|-------------------|
+|  - Job           |   - Alert DB        |   - Data Issue    |
+|  - File Transfer |   - Alert App       |  - Report Issue   |
+|  - Integration   |                     |                   |
   
-4 Integrations
-  - Job
-  - File Transfer
-  - Integration
-  
-5 Alert Monitoring
-  - Alert DB
-  - Alert App 
-  
-6 Data Error
-  - Data Issue
-  - Report Issue
-  
-7 Infrastructure
-  - Infrastructure
-  - DB Related
-  - Hardware
-  - Printing Issue
-  - DB Related
-  - Server Reboot
+
+|7 Infrastructure   |
+|-------------------|
+|  - Infrastructure |
+|  - DB Related     |
+|  - Hardware       |
+|  - Printing Issue |
+|  - DB Related     |
+|  - Server Reboot  |
 
 ### Motivation
 ### Solution Benefits
