@@ -128,7 +128,7 @@ alert_monitoring       0.98      0.90      0.94        97
        macro avg       0.90      0.70      0.76      6567
     weighted avg       0.85      0.83      0.82      6567
 
-For Level 2
+For Level  2
 f1 score 0.7511059519588367
 RandomForestClassifier Accuracy: 0.7597076290543627
 RandomForestClassifier Precision: 0.7942976587591652
