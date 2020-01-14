@@ -1,9 +1,38 @@
 # Classify Support Tickets 
 Classify support tickets depending of text in the ticket, the model classifies the ticket in 2 categories
 
-### Description
-This model classify support tickets based in the text description of the ticket.
 ### Assumptions
+These are the categories to classify the tickets:
+1 account_mgmt
+  - Access Request
+  - Account Update
+  - Login Issue
+2 app_error
+  - App Error
+  - App Functionality
+  - App Down
+3 service_request
+  - Request
+  - Enhancement
+  - Configuration
+4 integrations
+  - Job
+  - File Transfer
+  - Integration
+5 alert_monitoring
+  - Alert DB
+  - Alert App 
+6 Data Error
+  - Data Issue
+  - Report Issue
+7 Infrastructure
+  - Infrastructure
+  - DB Related
+  - Hardware
+  - Printing Issue
+  - DB Related
+  - Server Reboot
+
 ### Motivation
 ### Solution Benefits
 Reduce the time to classify a group of tickets acordign to a pre defined taxonomy.
