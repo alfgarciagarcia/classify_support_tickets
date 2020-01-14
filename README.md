@@ -3,6 +3,7 @@ Classify support tickets depending of text in the ticket, the model classifies t
 
 ### Assumptions
 These are the categories to classify the tickets:
+
 1 account_mgmt
   - Access Request
   - Account Update
