@@ -37,6 +37,6 @@ Take advantage of ML / AI algorithms to classify tickets using experience in 25K
 2) Test different algorithms considering F1 score metric to determine the best model.
     - 2.1 Use 70% of tickets to test algorithms
     - 2.2 Run different algorithms with different parameters
-          - 2.2.1 Use a 10 fold method to run algorithms
+      - 2.2.1 Use a 10 fold method to run algorithms
     - 2.2 Compare algorithms and resutls, with F1 score metric and select model with best results.
     
