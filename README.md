@@ -2,29 +2,29 @@
 Classify support tickets depending of text in the ticket, the model classifies the ticket in 2 categories
 
 ### Assumptions
-These are the categories to classify the tickets:
+These are the categories to classify the tickets in 2 levels: Level 1 with 7 categories and each of them with subcategories
 
-1 account_mgmt
+1 Account Management
   - Access Request
   - Account Update
   - Login Issue
   
-2 app_error
+2 Application Error
   - App Error
   - App Functionality
   - App Down
   
-3 service_request
+3 Service Request
   - Request
   - Enhancement
   - Configuration
   
-4 integrations
+4 Integrations
   - Job
   - File Transfer
   - Integration
   
-5 alert_monitoring
+5 Alert Monitoring
   - Alert DB
   - Alert App 
   
@@ -42,21 +42,21 @@ These are the categories to classify the tickets:
 
 ### Motivation
 ### Solution Benefits
-Reduce the time to classify a group of tickets acordign to a pre defined taxonomy.
+Reduce the time to classify a group of tickets acording to a pre defined taxonomy.
 Take advantage of ML / AI algorithms to classify tickets using experience in 25K+ tickets
 ### Solution Use
 - Case 1:
-  Classify a gorup of tickets to understand the kind of work received and prepare the information for a deep analysis about workload, structure of teams resolving tickets, productivity, etc.
+  Classify a group of tickets to understand the kind of work received and prepare the information for a deep analysis about workload, structure of teams resolving tickets, productivity, etc.
   
 - Case 2:
   Classify tickets as soon as it is received and route to the correct team according to caracteristic of the ticket and the classification generate by the model
 ### Step by Step solution
 1) Collect data:
-    - 1.1) Used 25K+ preclassified tickets
-    - 1.2) Clean tickets and resolve incongruencies in the classification
+    - 1.1 Used 25K+ preclassified tickets
+    - 1.2 Clean tickets and resolve incongruencies in the classification
 2) Test different algorithms considering F1 scoere metric to determine the best model.
-    - 2.1) Use 70% of tickets to test algorithms
-    - 2.2) Run different algorithms with different parameters
-         - 2.2.1) Use a 10 fold method to run algorithms
-    - 2.2) Compare algorithms and resutls, with F1 score metric and select model with best results.
+    - 2.1 Use 70% of tickets to test algorithms
+    - 2.2 Run different algorithms with different parameters
+          - 2.2.1 Use a 10 fold method to run algorithms
+    - 2.2 Compare algorithms and resutls, with F1 score metric and select model with best results.
     
