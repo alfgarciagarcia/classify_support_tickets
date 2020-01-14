@@ -55,17 +55,17 @@ Recall:           81.297%
 
 |                   precision|    recall|  f1-score|   support|
 |------------------|---------|----------|----------|----------|
-|    account_mgmt       0.92      0.86      0.89     11079
-|       app_error       0.69      0.93      0.80      9468
-| service_request       0.97      0.62      0.76      2528
-|    integrations       0.87      0.68      0.76       680
-|alert_monitoring       0.97      0.82      0.89       358
-|  Infrastructure       0.98      0.38      0.55       488
-|      Data Error       0.94      0.29      0.45      1667
+|    account_mgmt  |     0.92|      0.86|      0.89|     11079|
+|       app_error  |     0.69|      0.93|      0.80|      9468|
+| service_request  |     0.97|      0.62|      0.76|      2528|
+|    integrations  |     0.87|      0.68|      0.76|       680|
+|alert_monitoring  |     0.97|      0.82|      0.89|       358|
+|  Infrastructure  |     0.98|      0.38|      0.55|       488|
+|      Data Error  |     0.94|      0.29|      0.45|      166 | 
 |                  |         |          |          |          |
-|        accuracy                           0.81     26268
-|       macro avg       0.90      0.65      0.73     26268
-|    weighted avg       0.84      0.81      0.80     26268
+|        accuracy  |         |          |      0.81|     26268|
+|       macro avg  |     0.90|      0.65|      0.73|     26268|
+|    weighted avg  |     0.84|      0.81|      0.80|     26268|
 
 For Level 2
 total records:    26268
