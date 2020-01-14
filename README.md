@@ -52,8 +52,9 @@ Accuracy:         81.297%
 Precision:        84.364%
 Recall:           81.297%
 #### Classifcation report
-|                  |precision|    recall|  f1-score|   support|
-|------------------ ---------|----------|----------|----------|
+
+|                   precision|    recall|  f1-score|   support|
+|------------------|---------|----------|----------|----------|
 |    account_mgmt       0.92      0.86      0.89     11079
 |       app_error       0.69      0.93      0.80      9468
 | service_request       0.97      0.62      0.76      2528
@@ -74,7 +75,8 @@ Accuracy:         87.650%
 Precision:        87.950%
 Recall:           87.650%
 Classifcation report
-|                  |precision|   recall | f1-score |   support|
+
+|                   precision|   recall | f1-score |   support|
 |------------------|---------|----------|----------|----------|
         App Error       0.82      0.82      0.82      4070
    Access Request       0.87      0.99      0.92      5834
@@ -109,6 +111,7 @@ RandomForestClassifier Accuracy:  0.8274706867671692
 RandomForestClassifier Precision: 0.851012137889825
 RandomForestClassifier Recall:    0.8274706867671692
 Classifcation report
+
 |                  |precision|   recall | f1-score |   support|
 |------------------|---------|----------|----------|----------|
     account_mgmt       0.91      0.88      0.89      2741
@@ -129,6 +132,7 @@ RandomForestClassifier Accuracy: 0.7597076290543627
 RandomForestClassifier Precision: 0.7942976587591652
 RandomForestClassifier Recall: 0.7597076290543627
 Classifcation report
+
 |                  |precision|   recall | f1-score |   support|
 |------------------|---------|----------|----------|----------|
         App Error       0.58      0.77      0.66      1051
