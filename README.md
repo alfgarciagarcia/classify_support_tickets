@@ -53,7 +53,7 @@ Precision:        84.364%
 Recall:           81.297%
 #### Classifcation report
 
-|                   precision|    recall|  f1-score|   support|
+|                  |precision|    recall|  f1-score|   support|
 |------------------|---------|----------|----------|----------|
 |    account_mgmt  |     0.92|      0.86|      0.89|     11079|
 |       app_error  |     0.69|      0.93|      0.80|      9468|
@@ -76,7 +76,7 @@ Precision:        87.950%
 Recall:           87.650%
 Classifcation report
 
-|                   precision|   recall | f1-score |   support|
+|                  |precision|   recall | f1-score |   support|
 |------------------|---------|----------|----------|----------|
         App Error       0.82      0.82      0.82      4070
    Access Request       0.87      0.99      0.92      5834
