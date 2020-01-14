@@ -5,6 +5,7 @@ Classify support tickets depending of text in the ticket, the model classifies t
 These are the categories to classify the tickets in 2 levels: Level 1 with 7 categories and each of them with subcategories
 
 |1 Account Management | 2 Application Error |
+|---------------------|---------------------|
 |  - Access Request   |   - App Error |
 |  - Account Update   |   - App Functionality |
 |  - Login Issue      |   - App Down |
