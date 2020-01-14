@@ -45,6 +45,7 @@ Take advantage of ML / AI algorithms to classify tickets using experience in 25K
 #### Training
 
 For Level 1
+
 |total records   |    26268|
 |Cross Validation|  10 fold|
 |f1 score:       |  80.449%|
@@ -106,6 +107,7 @@ App Functionality       0.83      0.87      0.85      4861
  
  #### Test
  For Level 1
+ 
  f1 score 0.8197822552765655
 RandomForestClassifier Accuracy:  0.8274706867671692
 RandomForestClassifier Precision: 0.851012137889825
