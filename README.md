@@ -45,13 +45,13 @@ Take advantage of ML / AI algorithms to classify tickets using experience in 25K
 #### Training
 
 For Level 1
-total records:    26268
-Cross Validation  10 fold
-f1 score:         80.449%
-Accuracy:         81.297%
-Precision:        84.364%
-Recall:           81.297%
-#### Classifcation report
+|total records   |    26268|
+|Cross Validation|  10 fold|
+|f1 score:       |  80.449%|
+|Accuracy:       |  81.297%|
+|Precision:      |  84.364%|
+|Recall:         |  81.297%|
+
 
 |                  |precision|    recall|  f1-score|   support|
 |------------------|---------|----------|----------|----------|
