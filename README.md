@@ -8,24 +8,30 @@ These are the categories to classify the tickets:
   - Access Request
   - Account Update
   - Login Issue
+  
 2 app_error
   - App Error
   - App Functionality
   - App Down
+  
 3 service_request
   - Request
   - Enhancement
   - Configuration
+  
 4 integrations
   - Job
   - File Transfer
   - Integration
+  
 5 alert_monitoring
   - Alert DB
   - Alert App 
+  
 6 Data Error
   - Data Issue
   - Report Issue
+  
 7 Infrastructure
   - Infrastructure
   - DB Related
