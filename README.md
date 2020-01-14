@@ -11,21 +11,14 @@ These are the categories to classify the tickets in 2 levels: Level 1 with 7 cat
 |  - Login Issue      |   - App Down         |   - Configuration |
   
 
-|4 Integrations    | 5 Alert Monitoring  | 6 Data Error      |
-|------------------|---------------------|-------------------|
-|  - Job           |   - Alert DB        |   - Data Issue    |
-|  - File Transfer |   - Alert App       |  - Report Issue   |
-|  - Integration   |                     |                   |
-  
-
-|7 Infrastructure   |
-|-------------------|
-|  - Infrastructure |
-|  - DB Related     |
-|  - Hardware       |
-|  - Printing Issue |
-|  - DB Related     |
-|  - Server Reboot  |
+|4 Integrations    | 5 Alert Monitoring  | 6 Data Error      |7 Infrastructure   |
+|------------------|---------------------|-------------------|-------------------|
+|  - Job           |   - Alert DB        |   - Data Issue    |  - Infrastructure |
+|  - File Transfer |   - Alert App       |  - Report Issue   |  - DB Related     |
+|  - Integration   |                     |                   |  - Hardware       |
+|                  |                     |                   |  - Printing Issue |
+|                  |                     |                   |  - DB Related     |
+|                  |                     |                   |  - Server Reboot  |
 
 ### Motivation
 ### Solution Benefits
