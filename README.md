@@ -45,7 +45,7 @@ Take advantage of ML / AI algorithms to classify tickets using experience in 25K
 #### Training
 
 For Level 1
-
+|---|---|
 |total records   |    26268|
 |Cross Validation|  10 fold|
 |f1 score:       |  80.449%|
