@@ -24,12 +24,12 @@ These are the categories to classify the tickets in 2 levels: Level 1 with 7 cat
 ### Solution Benefits
 Reduce the time to classify a group of tickets acording to a pre defined taxonomy.
 Take advantage of ML / AI algorithms to classify tickets using experience in 25K+ tickets
-### Solution Use
+### Use Case
 - Case 1:
   Classify a group of tickets to understand the kind of work received and prepare the information for a deep analysis about workload, structure of teams resolving tickets, productivity, etc.
   
 - Case 2:
-  Classify tickets as soon as it is received and route to the correct team according to caracteristic of the ticket and the classification generate by the model
+  Classify a ticket as soon as it is received and route to the correct team according to caracteristic of the ticket and the classification generate by the model
 ### Step by Step solution
 1) Collect data:
     - 1.1 Used 25K+ preclassified tickets
