@@ -34,7 +34,7 @@ Take advantage of ML / AI algorithms to classify tickets using experience in 25K
 1) Collect data:
     - 1.1 Used 25K+ preclassified tickets
     - 1.2 Clean tickets and resolve incongruencies in the classification
-2) Test different algorithms considering F1 scoere metric to determine the best model.
+2) Test different algorithms considering F1 score metric to determine the best model.
     - 2.1 Use 70% of tickets to test algorithms
     - 2.2 Run different algorithms with different parameters
           - 2.2.1 Use a 10 fold method to run algorithms
