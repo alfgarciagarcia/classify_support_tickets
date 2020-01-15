@@ -19,8 +19,9 @@ Create the following structure of directories in your computer:
 
 - class
   - models
-  - to_process
-  - processed
+  - data
+    - to_process
+    - processed
 
 ### Files:
 Download and/ or copy:
