@@ -46,7 +46,7 @@ Take advantage of ML / AI algorithms to classify tickets using experience in 26K
 3) Test algorithm with 20% of tickets
 
 ## Use
-Review Instructions to run file for detail instructions to use the model.
+[Review Instructions to run file for detail instructions to use the model.](instructions_to_run,md)
 ###### Inputs:
 Excel or CVS file with tickets information, at least a description for the ticket
 
