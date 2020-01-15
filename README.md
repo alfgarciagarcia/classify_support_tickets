@@ -46,14 +46,11 @@ Take advantage of ML / AI algorithms to classify tickets using experience in 25K
 
 For Level 1
 
-|||
-|---|---|
-|total records   |   26,268|
-|Cross Validation|  10 fold|
-|f1 score:       |  80.449%|
-|Accuracy:       |  81.297%|
-|Precision:      |  84.364%|
-|Recall:         |  81.297%|
+|total records:      26,268
+
+|Cross Validation|f1 score|Accuracy|Precision|Recall
+|---|---|---|---|---|---|
+|10 Fold         |80.449% |81.297% |  84.364%| 81.297%
 
 #### Classifcation report
 |                  |precision|    recall|  f1-score|   support|
@@ -72,14 +69,10 @@ For Level 1
 
 For Level 2
 
-|||
-|---|---|
-|total records:   |  26,268
-|Cross Validation | 10 fold
-|f1 score:        | 87.034%
-|Accuracy:        | 87.650%
-|Precision:       | 87.950%
-|Recall:          | 87.650%
+
+|Cross Validation|f1 score|Accuracy|Precision|Recall
+|---|---|---|---|---|---|
+|10 Fold         |87.034% |87.650% |  87.950%| 87.650%
 
 ### Classifcation report
 
@@ -114,12 +107,9 @@ For Level 2
  #### Test
  For Level 1
 
-|||
-|---|---|
-|f1 score   |81.978%
-|Accuracy:  |82.747%
-|Precision: |85.101%
-|Recall:    |82.747%
+|Cross Validation|f1 score|Accuracy|Precision|Recall
+|---|---|---|---|---|---|
+|10 Fold         |81.978% |82.747% |  85.101%| 82.747%
 
 Classifcation report
 
@@ -139,12 +129,9 @@ Classifcation report
 
 ## For Level  2
 
-|||
-|---|---|
-|f1 score   |75.110%
-|Accuracy:  |75.970%
-|Precision: |79.429%
-|Recall:    |75.970%
+|Cross Validation|f1 score|Accuracy|Precision|Recall
+|---|---|---|---|---|---|
+|10 Fold         |75.110%|75.970%|  79.429%| 75.970%
 
 ### Classifcation report
 
