@@ -20,7 +20,7 @@ These are the categories to classify the tickets in 2 levels: Level 1 with 7 cat
 |                  |                     |                   |  - DB Related     |
 |                  |                     |                   |  - Server Reboot  |
 
-Due that the inbalance of categories in a sample of tickets, F1-score is the metric use to determine the best model.
+Due that the inbalance of categories in a sample of tickets, F1-score was the metric used to determine the best model.
 
 Subcategories only belong to one category
 
@@ -36,26 +36,45 @@ Take advantage of ML / AI algorithms to classify tickets using experience in 26K
   Classify a ticket as soon as it is received and route to the correct team according to caracteristic of the ticket and the classification generate by the model
 ### Step by Step solution
 1) Collect data:
-    - 1.1 Used 32K+ preclassified tickets
-    - 1.2 Clean tickets and resolve incongruencies in the classification
+   - 1.1 Used 32K+ preclassified tickets
+   - 1.2 Clean tickets and resolve incongruencies in the classification
 2) Train different algorithms considering F1 score metric to determine the best model.
-    - 2.1 Use 80% of tickets to test algorithms
-    - 2.2 Run different algorithms with different parameters
-      - 2.2.1 Use a cross validation with 10 fold to obtain metrics
-    - 2.2 Compare algorithms and resutls, with F1 score metric and select model with best results.
+   - 2.1 Use 80% of tickets to test algorithms
+   - 2.2 Run different algorithms with different parameters
+     - 2.2.1 Use a cross validation with 10 fold to obtain metrics
+   - 2.2 Compare algorithms and resutls, with F1 score metric and select model with best results.
 3) Test algorithm with 20% of tickets
 
 ## Use
 [Review this file for detail instructions to use the model.](instructions_to_run,md)
-###### Inputs:
+### Inputs:
 Excel or CVS file with tickets information, at least a description for the ticket
 
-###### Outputs:
+### Outputs:
 The process will classify tickets in the input file and return an Excel file with the information about each ticket with a category adn subcategory assigned and a confidence of the classification in the formprobability that that category or subcategory fit accordign to the model. Also provide a confidence field about the classification, with 3 possible values: Excellent, Great and Possible, based in the probability of the category and subvategory.
 
 ## Results
 Below the results for training dataset and test dataset. For training, 80% of tickets were used (26,268) amd for testing 20% of tickets were used (6567)
 #### Training Results
+During the training phase, different algorithms with different parameters were tested to select the best model. Algorithms include are:
+
+- Logistic Regression
+- AdaBoost
+- Random Forest
+- ELMO
+- Output code classfier with Random forest
+- SGDC
+- Decsion TRee
+- Gausian NB
+- Radius Neighbors
+- K Neighbors
+- Naive Bayes
+- XGBoost
+
+After reviewed results for each model, Random Forest Classfier was the model that provided the best metric for F1-score.
+
+Fine tuning to the Random Forest Classfier parameters such as: criterion, max_depth, min_samples_leaf and number of trees, improved F1-score metric to **80.44%** 
+
 
 ##### For Level 1
 
