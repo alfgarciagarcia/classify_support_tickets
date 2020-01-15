@@ -46,12 +46,14 @@ Take advantage of ML / AI algorithms to classify tickets using experience in 26K
 3) Test algorithm with 20% of tickets
 
 ## Use
-[Review this file for detail instructions to use the model.](instructions_to_run,md)
+For detail instructions to use the model, review this [file](instructions_to_run.md)
 ### Inputs:
 Excel or CVS file with tickets information, at least a description for the ticket
 
 ### Outputs:
-The process will classify tickets in the input file and return an Excel file with the information about each ticket with a category adn subcategory assigned and a confidence of the classification in the formprobability that that category or subcategory fit accordign to the model. Also provide a confidence field about the classification, with 3 possible values: Excellent, Great and Possible, based in the probability of the category and subvategory.
+The process will classify tickets in the input file and return an Excel file with the information about each ticket with a category and subcategory assigned and a confidence of the classification in the form of and a confidence category, with 3 possible values: Excellent, Great and Possible, based in the probability of the category and subcategory.
+
+This are the columns added to the file
 
 ## Results
 Below a summary of results for training dataset and test dataset. For training, 80% of tickets were used (26,268) and for testing 20% of tickets were used (6567)
