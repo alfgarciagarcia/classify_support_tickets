@@ -49,7 +49,7 @@ For Level 1
 |total records:      26,268
 
 |Cross Validation|f1 score|Accuracy|Precision|Recall
-|---|---|---|---|---|---|
+|---|---|---|---|---|
 |10 Fold         |80.449% |81.297% |  84.364%| 81.297%
 
 #### Classifcation report
@@ -71,7 +71,7 @@ For Level 2
 
 
 |Cross Validation|f1 score|Accuracy|Precision|Recall
-|---|---|---|---|---|---|
+|---|---|---|---|---|
 |10 Fold         |87.034% |87.650% |  87.950%| 87.650%
 
 ### Classifcation report
@@ -108,7 +108,7 @@ For Level 2
  For Level 1
 
 |Cross Validation|f1 score|Accuracy|Precision|Recall
-|---|---|---|---|---|---|
+|---|---|---|---|---|
 |10 Fold         |81.978% |82.747% |  85.101%| 82.747%
 
 Classifcation report
@@ -130,7 +130,7 @@ Classifcation report
 ## For Level  2
 
 |Cross Validation|f1 score|Accuracy|Precision|Recall
-|---|---|---|---|---|---|
+|---|---|---|---|---|
 |10 Fold         |75.110%|75.970%|  79.429%| 75.970%
 
 ### Classifcation report
