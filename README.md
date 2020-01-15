@@ -20,10 +20,12 @@ These are the categories to classify the tickets in 2 levels: Level 1 with 7 cat
 |                  |                     |                   |  - DB Related     |
 |                  |                     |                   |  - Server Reboot  |
 
-### Motivation
+Due that the inbalance of categories in a sample of tickets, F1-score is the metric use to determine the best model.
+
 ### Solution Benefits
-Reduce the time to classify a group of tickets acording to a pre defined taxonomy.
+Reduce the time to classify a group of tickets acording to a pre defined categories and subcategories.
 Take advantage of ML / AI algorithms to classify tickets using experience in 25K+ tickets
+
 ### Use Case
 - Case 1:
   Classify a group of tickets to understand the kind of work received and prepare the information for a deep analysis about workload, structure of teams resolving tickets, productivity, etc.
@@ -41,7 +43,7 @@ Take advantage of ML / AI algorithms to classify tickets using experience in 25K
     - 2.2 Compare algorithms and resutls, with F1 score metric and select model with best results.
 3) Test algorithm with 20% of tickets
 
-# Results
+## Results
 
 #### Training
 
@@ -69,13 +71,13 @@ total records:      26,268
 |       macro avg  |     0.90|      0.65|      0.73|     26268|
 |    weighted avg  |     0.84|      0.81|      0.80|     26268|
 
-## For Level 2
+### For Level 2
 
 |Cross Validation|f1 score|Accuracy|Precision|Recall
 |---|---|---|---|---|
 |10 Fold         |87.034% |87.650% |  87.950%| 87.650%
 
-### Classifcation report
+#### Classifcation report
 
 |Subcategory       |precision |   recall | f1-score |   support|
 |------------------|----------|----------|----------|----------|
@@ -106,13 +108,13 @@ total records:      26,268
      
  
  #### Test
- For Level 1
+ #### For Level 1
 
 |Total Records|f1 score|Accuracy|Precision|Recall
 |---|---|---|---|---|
 |6567         |81.978% |82.747% |  85.101%| 82.747%
 
-Classifcation report
+#### Classifcation report
 
 |Category          |precision|   recall | f1-score |   support|
 |------------------|---------|----------|----------|----------|
@@ -128,13 +130,13 @@ Classifcation report
 |       macro avg   |    0.90 |     0.70 |     0.76 |     6567
 |    weighted avg   |    0.85 |     0.83 |     0.82 |     6567
 
-## For Level  2
+#### For Level  2
 
 |Total Records|f1 score|Accuracy|Precision|Recall
 |---|---|---|---|---|
 |6567         |75.110%|75.970%|  79.429%| 75.970%
 
-### Classifcation report
+#### Classifcation report
 
 |Subcategory       |precision|   recall | f1-score |   support|
 |------------------|:---------:|:----------:|:----------:|:----------:|
