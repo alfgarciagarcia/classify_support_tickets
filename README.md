@@ -70,7 +70,7 @@ For more details about results including parameters used, and classification rep
 
 
 ## Use
-For detail instructions to use the model, review this [file](Instructions_to-run.md)
+For detail instructions to use the model, review this [file](Instruction_to-run.md)
 ### Inputs:
 Excel or CVS file with tickets information, at least a description for the ticket
 
