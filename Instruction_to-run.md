@@ -4,6 +4,16 @@
 ### Prerequisites
 
 Your computer should have python 3.6 installed
+These are the libraries required: (*You can use requirements.txt file to install the correct versions*)
+- numpy==1.17.0
+- matplotlib==3.1.1
+- pandas==0.25.0
+- wordcloud==1.5.0
+- sklearn_pandas==1.8.0
+- spacy==2.1.4
+- gensim==3.4.0
+- scikit_learn==0.21.3
+
 Create the following structure of directories in your computer:
 
 - class
@@ -15,8 +25,13 @@ Create the following structure of directories in your computer:
 Download and/ or copy:
 
 1. RCAPRedictormodelRF_v1.mod , RCAPRedictormodelRFLevel2_v2.mod adn autrcabigramfile_lda to models directory
-2. classtkt_config.py, classtkt_main.py, classtkt_funcs.py to class directory
-3. Copy File to classify to to_process directory
+2. classtkt_config.py to class directory
+   - This program contains configuration for the model, including directory strcuture, name of input and output file
+3. classtkt_main.py to class directory
+   - This program ins the main program to run the model
+4. classtkt_funcs.py to class directory
+   - Thsi program contains functions to clean, predict and save the file 
+3. Copy your Excel input file  to to_process directory
 
 ### Inputs:
 
