@@ -73,4 +73,4 @@ Final algorithm with best result was Random Forest
 |1         |81.978% |82.747% |  85.101%| 82.747%
 |2         |75.110%|75.970%|  79.429%| 75.970%
 
-For more details about results incluing parameters used, and classification report,review this [file](results.md)
+For more details about results including parameters used, and classification report,review this [file](results.md)
