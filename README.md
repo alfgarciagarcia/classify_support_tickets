@@ -71,19 +71,4 @@ For more details about results including parameters used, and classification rep
 
 ## Use
 For detail instructions to use the model, review this [file](Instruction_to-run.md)
-### Inputs:
-Excel or CVS file with tickets information, at least a description for the ticket
 
-### Outputs:
-The process will classify tickets in the input file and return an Excel file with the information about each ticket with a category and subcategory assigned and a confidence of the classification in the form of and a confidence category, with 3 possible values: Excellent, Great and Possible, based in the probability of the category and subcategory.
-
-These are the columns added to the output file:
-1. RCA_predicted
-2. RCA_predicted_desc
-3. prob_pred
-4. prob_pred_sec
-5. xmatch
-6. RCAL2_predicted
-7. RCAL2_predicted_desc
-8. prob_predL2
-9. xmatchL2
