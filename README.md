@@ -56,9 +56,9 @@ The process will classify tickets in the input file and return an Excel file wit
 This are the columns added to the file
 
 ## Results
-Below a summary of results for training dataset and test dataset. For training, 80% of tickets were used (26,268) and for testing 20% of tickets were used (6567)
+Below a summary of results for training and test phases. For training, 80% of tickets were used (26,268) and for testing 20% of tickets were used (6567)
 
-For training a cross validation with a 10 fold was used to verify the results of the model
+Cross validation with a 10 fold was used to verify the results of the model
 
 Final algorithm with best result was Random Forest
 #### Training Results
