@@ -35,13 +35,31 @@ Download and/ or copy:
 3. Copy your Excel input file  to to_process directory
 
 ### Inputs:
-
 Excel or CVS file with tickets information, at least a description for the ticket
 
 ### Outputs:
+The process will classify tickets in the input file and return an Excel file with the information about each ticket with a category and subcategory assigned and a confidence of the classification in the form of and a confidence category, with 3 possible values: Excellent, Great and Possible, based in the probability of the category and subcategory.
 
-The process will classify tickets in the input file and return an Excel file with the information about each ticket with a category adn subcategory assigned and a confidence of the classification in the formprobability that that category or subcategory fit accordign to the model. Also provide a confidence field about the classification, with 3 possible values: Excellent, Great and Possible, based in the probability of the category and subvategory.
-
+These are the columns added to the output file:
+1. RCA_predicted
+   - number of the category predcited bassed in the description of the ticket
+2. RCA_predicted_desc
+   - Description of the category
+3. prob_pred
+   - probability of that category, values from 0 - 1
+4. prob_pred_sec
+   - probability the second category, values from 0 - 1
+5. xmatch
+   - classifcacion of the prediction based in the probability, value could be: Excelent, Great or Possible
+6. RCAL2_predicted
+   - number of the category predcited for Level 2, bassed in the description of the ticket and the category of level 1 (RCA_predicted)
+7. RCAL2_predicted_desc
+   - Description of the category for Level 2
+8. prob_predL2
+   - probability of that category, values from 0 - 1
+9. xmatchL2
+   - classifcacion of the prediction for level 2, based in the probability, value could be: Excelent, Great or Possible
+   
 ## To Run
 From a terminal run: python classtkt_main.py
 
