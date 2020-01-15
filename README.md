@@ -32,28 +32,30 @@ Take advantage of ML / AI algorithms to classify tickets using experience in 25K
   Classify a ticket as soon as it is received and route to the correct team according to caracteristic of the ticket and the classification generate by the model
 ### Step by Step solution
 1) Collect data:
-    - 1.1 Used 25K+ preclassified tickets
+    - 1.1 Used 32K+ preclassified tickets
     - 1.2 Clean tickets and resolve incongruencies in the classification
-2) Test different algorithms considering F1 score metric to determine the best model.
-    - 2.1 Use 70% of tickets to test algorithms
+2) Train different algorithms considering F1 score metric to determine the best model.
+    - 2.1 Use 80% of tickets to test algorithms
     - 2.2 Run different algorithms with different parameters
       - 2.2.1 Use a cross validation with 10 fold to obtain metrics
     - 2.2 Compare algorithms and resutls, with F1 score metric and select model with best results.
-    
-### Results
+3) Test algorithm with 20% of tickets
+
+# Results
 
 #### Training
 
-For Level 1
+### For Level 1
 
-|total records:      26,268
+total records:      26,268
 
 |Cross Validation|f1 score|Accuracy|Precision|Recall
 |---|---|---|---|---|
 |10 Fold         |80.449% |81.297% |  84.364%| 81.297%
 
 #### Classifcation report
-|                  |precision|    recall|  f1-score|   support|
+
+|Category          |precision|    recall|  f1-score|   support|
 |------------------|---------|----------|----------|----------|
 |    account_mgmt  |     0.92|      0.86|      0.89|     11079|
 |       app_error  |     0.69|      0.93|      0.80|      9468|
@@ -67,8 +69,7 @@ For Level 1
 |       macro avg  |     0.90|      0.65|      0.73|     26268|
 |    weighted avg  |     0.84|      0.81|      0.80|     26268|
 
-For Level 2
-
+## For Level 2
 
 |Cross Validation|f1 score|Accuracy|Precision|Recall
 |---|---|---|---|---|
@@ -76,7 +77,7 @@ For Level 2
 
 ### Classifcation report
 
-|                  |precision |   recall | f1-score |   support|
+|Subcategory       |precision |   recall | f1-score |   support|
 |------------------|----------|----------|----------|----------|
 |        App Error |      0.82|      0.82|      0.82|      4070
 |   Access Request |      0.87|      0.99|      0.92|      5834
@@ -107,13 +108,13 @@ For Level 2
  #### Test
  For Level 1
 
-|Cross Validation|f1 score|Accuracy|Precision|Recall
+|Total Records|f1 score|Accuracy|Precision|Recall
 |---|---|---|---|---|
-|10 Fold         |81.978% |82.747% |  85.101%| 82.747%
+|6567         |81.978% |82.747% |  85.101%| 82.747%
 
 Classifcation report
 
-|                  |precision|   recall | f1-score |   support|
+|Category          |precision|   recall | f1-score |   support|
 |------------------|---------|----------|----------|----------|
 |    account_mgmt   |    0.91 |     0.88 |     0.89 |     2741 
 |       app_error   |    0.72 |     0.93 |     0.81 |     2405
@@ -129,14 +130,14 @@ Classifcation report
 
 ## For Level  2
 
-|Cross Validation|f1 score|Accuracy|Precision|Recall
+|Total Records|f1 score|Accuracy|Precision|Recall
 |---|---|---|---|---|
-|10 Fold         |75.110%|75.970%|  79.429%| 75.970%
+|6567         |75.110%|75.970%|  79.429%| 75.970%
 
 ### Classifcation report
 
-|                  |precision|   recall | f1-score |   support|
-|------------------|:---------:|:----------:|:----------:|----------|
+|Subcategory       |precision|   recall | f1-score |   support|
+|------------------|:---------:|:----------:|:----------:|:----------:|
 |        App Error  |     0.58|      0.77|      0.66|      1051
 |   Access Request  |     0.78|      0.84|      0.81|      1456
 |   Account Update  |     1.00|      0.93|      0.96|      1066
