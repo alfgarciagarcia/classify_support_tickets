@@ -5,15 +5,15 @@ Prerequisites
 Create the following structure of directories in your computer:
 
 - class
-        - models
-        - to_process
-        - processed
+  - models
+  - to_process
+  - processed
 
 ### Files:
 Download and copy:
 
-1 RCAPRedictormodelRF_v1.mod , RCAPRedictormodelRFLevel2_v2.mod adn autrcabigramfile_lda to models directory
-2 classtkt_config.py, classtkt_main.py, classtkt_funcs.py to class directory
+1. RCAPRedictormodelRF_v1.mod , RCAPRedictormodelRFLevel2_v2.mod adn autrcabigramfile_lda to models directory
+2. classtkt_config.py, classtkt_main.py, classtkt_funcs.py to class directory
 
 
 ### Inputs:
