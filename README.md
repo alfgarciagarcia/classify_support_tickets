@@ -1,19 +1,19 @@
 # Classify Support Tickets 
-Classify support tickets depending of text in the ticket, the model classifies the ticket in 2 categories
+Classify support tickets depending of text in description and short description fields of the ticket, the model classifies the ticket in 2 categories
 
 ### Assumptions
 These are the categories to classify the tickets in 2 levels: Level 1 with 7 categories and each of them with subcategories
 
 |1 Account Management | 2 Application Error  | 3 Service Request |
 |---------------------|----------------------|-------------------|
-|  - Access Request   |   - App Error        |   - Request       |
+|  - Access Request   |   - App Error        |  - Request        |
 |  - Account Update   |   - App Functionality|  - Enhancement    |
-|  - Login Issue      |   - App Down         |   - Configuration |
+|  - Login Issue      |   - App Down         |  - Configuration  |
   
 
 |4 Integrations    | 5 Alert Monitoring  | 6 Data Error      |7 Infrastructure   |
 |------------------|---------------------|-------------------|-------------------|
-|  - Job           |   - Alert DB        |   - Data Issue    |  - Infrastructure |
+|  - Job           |   - Alert DB        |  - Data Issue     |  - Infrastructure |
 |  - File Transfer |   - Alert App       |  - Report Issue   |  - DB Related     |
 |  - Integration   |                     |                   |  - Hardware       |
 |                  |                     |                   |  - Printing Issue |
@@ -22,9 +22,11 @@ These are the categories to classify the tickets in 2 levels: Level 1 with 7 cat
 
 Due that the inbalance of categories in a sample of tickets, F1-score is the metric use to determine the best model.
 
+Subcategories only belong to one category
+
 ### Solution Benefits
 Reduce the time to classify a group of tickets acording to a pre defined categories and subcategories.
-Take advantage of ML / AI algorithms to classify tickets using experience in 25K+ tickets
+Take advantage of ML / AI algorithms to classify tickets using experience in 26K+ tickets.
 
 ### Use Case
 - Case 1:
@@ -43,11 +45,19 @@ Take advantage of ML / AI algorithms to classify tickets using experience in 25K
     - 2.2 Compare algorithms and resutls, with F1 score metric and select model with best results.
 3) Test algorithm with 20% of tickets
 
+## Use
+Review Instructions to run file for detail instructions to use the model.
+###### Inputs:
+Excel or CVS file with tickets information, at least a description for the ticket
+
+###### Outputs:
+The process will classify tickets in the input file and return an Excel file with the information about each ticket with a category adn subcategory assigned and a confidence of the classification in the formprobability that that category or subcategory fit accordign to the model. Also provide a confidence field about the classification, with 3 possible values: Excellent, Great and Possible, based in the probability of the category and subvategory.
+
 ## Results
+Below the results for training dataset and test dataset. For training, 80% of tickets were used (26,268) amd for testing 20% of tickets were used (6567)
+#### Training Results
 
-#### Training
-
-### For Level 1
+##### For Level 1
 
 total records:      26,268
 
@@ -55,9 +65,9 @@ total records:      26,268
 |---|---|---|---|---|
 |10 Fold         |80.449% |81.297% |  84.364%| 81.297%
 
-#### Classifcation report
+##### Classifcation report
 
-|Category          |precision|    recall|  f1-score|   support|
+|Category          |Precision|    Recall|  f1-score|   support|
 |------------------|---------|----------|----------|----------|
 |    account_mgmt  |     0.92|      0.86|      0.89|     11079|
 |       app_error  |     0.69|      0.93|      0.80|      9468|
@@ -71,15 +81,15 @@ total records:      26,268
 |       macro avg  |     0.90|      0.65|      0.73|     26268|
 |    weighted avg  |     0.84|      0.81|      0.80|     26268|
 
-### For Level 2
+##### For Level 2
 
 |Cross Validation|f1 score|Accuracy|Precision|Recall
 |---|---|---|---|---|
 |10 Fold         |87.034% |87.650% |  87.950%| 87.650%
 
-#### Classifcation report
+##### Classifcation report
 
-|Subcategory       |precision |   recall | f1-score |   support|
+|Subcategory       |Precision |   Recall | f1-score |   support|
 |------------------|----------|----------|----------|----------|
 |        App Error |      0.82|      0.82|      0.82|      4070
 |   Access Request |      0.87|      0.99|      0.92|      5834
@@ -102,12 +112,12 @@ total records:      26,268
 |      Integration |      0.00|      0.00|      0.00|        13
 |             Job  |      0.86|      0.98|      0.92|       535
 |                  |          |         |         |         
-|          accuracy|          |         |       0.88|     26268
+|          Accuracy|          |         |       0.88|     26268
 |        macro avg |      0.86|      0.77|      0.79|     26268
 |     weighted avg |      0.88|      0.88|      0.87|     26268
      
  
- #### Test
+ #### Test Results
  #### For Level 1
 
 |Total Records|f1 score|Accuracy|Precision|Recall
@@ -116,8 +126,8 @@ total records:      26,268
 
 #### Classifcation report
 
-|Category          |precision|   recall | f1-score |   support|
-|------------------|---------|----------|----------|----------|
+|Category           |Precision|   Recall | f1-score |  support|
+|-------------------|---------|----------|----------|---------|
 |    account_mgmt   |    0.91 |     0.88 |     0.89 |     2741 
 |       app_error   |    0.72 |     0.93 |     0.81 |     2405
 | service_request   |    0.97 |     0.64 |     0.77 |      592
@@ -138,7 +148,7 @@ total records:      26,268
 
 #### Classifcation report
 
-|Subcategory       |precision|   recall | f1-score |   support|
+|Subcategory       |Precision|   Recall | f1-score |   support|
 |------------------|:---------:|:----------:|:----------:|:----------:|
 |        App Error  |     0.58|      0.77|      0.66|      1051
 |   Access Request  |     0.78|      0.84|      0.81|      1456
