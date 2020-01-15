@@ -17,7 +17,7 @@ These are the libraries required: (*You can use requirements.txt file to install
 
 Create the following structure of directories in your computer:
 
-- class
+- autrca
   - models
   - data
     - to_process
