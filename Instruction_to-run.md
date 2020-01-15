@@ -4,6 +4,7 @@
 ### Prerequisites
 
 Your computer should have python 3.6 installed
+
 These are the libraries required: (*You can use requirements.txt file to install the correct versions*)
 - numpy==1.17.0
 - matplotlib==3.1.1
@@ -54,4 +55,4 @@ The program will ask for details about
 ## Results
 The program will display results of the process and will save 2 files with the tickets classified in the "processed" directory. One file in Excel format and one in pkl format (zip format). 
 
-The name of the files will be the origianl name of the input file  plius the date.
+The name of the files will be the original name of the input file  plius the date.
