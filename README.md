@@ -149,7 +149,7 @@ Classifcation report
 ### Classifcation report
 
 |                  |precision|   recall | f1-score |   support|
-|------------------|---------|----------|----------|----------|
+|------------------|:---------:|:----------:|:----------:|----------|
 |        App Error  |     0.58|      0.77|      0.66|      1051
 |   Access Request  |     0.78|      0.84|      0.81|      1456
 |   Account Update  |     1.00|      0.93|      0.96|      1066
@@ -173,4 +173,4 @@ Classifcation report
 |                  |         |          |          |          
 |         accuracy  |         |          |      0.76|      6567
 |        macro avg  |     0.84|      0.58|      0.63|      6567
-     weighted avg  |     0.79|      0.76|      0.75|      6567
+|     weighted avg  |     0.79|      0.76|      0.75|      6567
