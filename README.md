@@ -45,15 +45,6 @@ Take advantage of ML / AI algorithms to classify tickets using experience in 26K
    - 2.2 Compare algorithms and resutls, with F1 score metric and select model with best results.
 3) Test algorithm with 20% of tickets
 
-## Use
-For detail instructions to use the model, review this [file](instructions_to_run.md)
-### Inputs:
-Excel or CVS file with tickets information, at least a description for the ticket
-
-### Outputs:
-The process will classify tickets in the input file and return an Excel file with the information about each ticket with a category and subcategory assigned and a confidence of the classification in the form of and a confidence category, with 3 possible values: Excellent, Great and Possible, based in the probability of the category and subcategory.
-
-This are the columns added to the file
 
 ## Results
 Below a summary of results for training and test phases. For training, 80% of tickets were used (26,268) and for testing 20% of tickets were used (6567)
@@ -76,3 +67,23 @@ Final algorithm with best result was Random Forest
 |2         |75.110%|75.970%|  79.429%| 75.970%
 
 For more details about results including parameters used, and classification report,review this [file](results.md)
+
+
+## Use
+For detail instructions to use the model, review this [file](instructions_to_run.md)
+### Inputs:
+Excel or CVS file with tickets information, at least a description for the ticket
+
+### Outputs:
+The process will classify tickets in the input file and return an Excel file with the information about each ticket with a category and subcategory assigned and a confidence of the classification in the form of and a confidence category, with 3 possible values: Excellent, Great and Possible, based in the probability of the category and subcategory.
+
+These are the columns added to the output file:
+1. RCA_predicted
+2. RCA_predicted_desc
+3. prob_pred
+4. prob_pred_sec
+5. xmatch
+6. RCAL2_predicted
+7. RCAL2_predicted_desc
+8. prob_predL2
+9. xmatchL2
